@@ -1,3 +1,7 @@
+# Clean Architecture 
+
+Architecture is very important in developing an application. Architecture can be likened to a floor plan that describes how the flow in an application project. The main purpose of implementing the architecture is the separation of concern (SoC). So, it will be easier if we can work by focusing on one thing at a time.
+
 # Core libraries
 
 **[intl](https://pub.dev/packages/intl), [intl_utils](https://pub.dev/packages/intl_utils)**: Localization, date/time formatting, parsing.  
@@ -6,6 +10,52 @@
 **[dio](https://pub.dev/packages/dio), [connectivity_plus](https://pub.dev/packages/connectivity_plus)**: Network calls, network check.  
 **[flutter_easyloading](https://pub.dev/packages/flutter_easyloading)**: Simple loading, toast.  
 **[shared_preferences](https://pub.dev/packages/shared_preferences)**: Local persistence.  
+
+### Folder Structure
+Let's use files and folders to structure our application. Doing this allows us to communicate architecture intent:
+
+```
+lib
+├── main.dart
+├── main-prod.dart
+├── app.dart
+└── src
+    ├── common        
+    │
+    ├── core
+    │   ├── exception
+    │   ├── mixins
+    │   ├── resource
+    │   ├── routes
+    │   ├── theme
+    │   ├── usecase
+    │   └── utils
+    │
+    ├── data
+    │   ├── datasources
+    │   │   ├── locale
+    │   │   └── remote
+    │   │       ├── interceptors
+    │   │       └── services
+    │   ├── models
+    │   │   ├── params
+    │   │   └── response
+    │   └── repositories
+    │
+    ├── domain
+    │   ├── repositories
+    │   └── usecases    
+    │
+    ├── presentation
+    │   ├── blocs
+    │   ├── screens
+    │   └── widgets
+    │
+    └── injector.dart
+```
+* Data: - This layer consists of data source code such as consume Rest API, access to the local database, Firebase, or other sources. 
+* Domain: - The domain layer is the deepest in the clean architecture. This layer contains the code for business logic applications such as entities and use cases.
+* Presentation: - The presentation layer consists of the code to access the data of the app from a repository. Also, there is the code for state management such as providers, BLoC, and so on.
 
 
 # Common commands
