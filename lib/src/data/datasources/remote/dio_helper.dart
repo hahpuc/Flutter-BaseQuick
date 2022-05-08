@@ -62,7 +62,8 @@ class DioHelper {
             errorCode: errorCode, statusCode: response.statusCode);
       }
     } catch (e) {
-      log(e.toString());
+      // Log with Red text
+      log('\x1B[31m${e.toString()}\x1B[0m');
       rethrow;
     }
   }
@@ -97,7 +98,8 @@ class DioHelper {
             errorCode: errorCode, statusCode: response.statusCode);
       }
     } catch (e) {
-      log(e.toString());
+      // Log with Red text
+      log('\x1B[31m${e.toString()}\x1B[0m');
       rethrow;
     }
   }
@@ -132,7 +134,8 @@ class DioHelper {
             errorCode: errorCode, statusCode: response.statusCode);
       }
     } catch (e) {
-      log(e.toString());
+      // Log with Red text
+      log('\x1B[31m${e.toString()}\x1B[0m');
       rethrow;
     }
   }
@@ -165,7 +168,8 @@ class DioHelper {
             errorCode: errorCode, statusCode: response.statusCode);
       }
     } catch (e) {
-      log(e.toString());
+      // Log with Red text
+      log('\x1B[31m${e.toString()}\x1B[0m');
       rethrow;
     }
   }
