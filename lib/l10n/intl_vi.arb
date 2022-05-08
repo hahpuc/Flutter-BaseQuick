@@ -1,0 +1,13 @@
+{
+    "@@locale": "vi",
+
+    "app_name": "App name vi",
+    
+    "ok": "OK",
+    "cancel": "Huỷ",
+
+    "hello": "Xin chào",
+
+    "error_unknown": "Đã có lỗi xảy ra. Vui lòng thử lại",
+    "error_no_internet": "Không có kết nối internet"
+}

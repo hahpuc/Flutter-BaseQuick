@@ -1,0 +1,13 @@
+{
+    "@@locale": "en",
+
+    "app_name": "App name en",
+
+    "ok": "OK",
+    "cancel": "Cancel",
+
+    "hello": "Hello",
+
+    "error_unknown": "Unknown error",
+    "error_no_internet": "No internet"
+}
