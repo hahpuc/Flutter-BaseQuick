@@ -16,10 +16,10 @@ class UserCubit extends Cubit<UserState> {
   UserCubit(this._getUsersUseCase, this._getUserByIdUseCase)
       : super(UserInitState());
 
-  void getUserList() {
+  void getUserList(int page) {
     emit(UserLoadingState());
 
-    var params = UserRequestParam(page: 1);
+    var params = UserRequestParam(page: page);
 
     _getUsersUseCase(params: params).then((data) {
       if (data is DataSuccess) {
