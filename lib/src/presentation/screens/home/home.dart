@@ -1,8 +1,8 @@
 import 'dart:developer';
 
-import 'package:base_quick/src/core/theme/app_dimens.dart';
-import 'package:base_quick/src/data/models/response/users/users_response.dart';
-import 'package:base_quick/src/presentation/widgets/base/custom_network_image.dart';
+import '/src/core/theme/app_dimens.dart';
+import '/src/data/models/response/users/users_response.dart';
+import '/src/presentation/widgets/base/custom_network_image.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 
 import '/src/core/routes/routes.dart';
