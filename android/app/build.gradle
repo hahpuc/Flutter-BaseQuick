@@ -57,6 +57,21 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+     flavorDimensions 'default'
+
+    productFlavors {
+        dev {
+            dimension "default"
+            applicationId "com.example.baseQuick"
+            resValue "string", "app_name", "TEST Base Quick"
+        }
+        prod {
+            dimension "default"
+            applicationId "com.example.baseQuick"
+            resValue "string", "app_name", "Base Quick"
+        }
+    }
 }
 
 flutter {
