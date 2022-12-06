@@ -1,6 +1,6 @@
 import '../../domain/repositories/pref_repository.dart';
 
-import '../datasources/local/pref_helper.dart';
+import '../datasources/local/pref/pref_helper.dart';
 
 class PrefRepositoryImpl extends PrefRepository {
   final PrefHelper prefHelper;

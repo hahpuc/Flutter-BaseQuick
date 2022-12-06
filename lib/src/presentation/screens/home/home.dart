@@ -9,7 +9,7 @@ import '/src/core/routes/routes.dart';
 
 import '/src/core/mixins/after_layout.dart';
 import '/src/core/mixins/loading_view.dart';
-import '/src/injector.dart';
+import '../../../di/service_locator.dart';
 import '/src/presentation/blocs/user/user_cubit.dart';
 import '/src/presentation/blocs/user/user_state.dart';
 import 'package:flutter/material.dart';

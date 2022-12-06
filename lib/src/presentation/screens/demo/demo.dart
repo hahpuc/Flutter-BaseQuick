@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/mixins/loading_view.dart';
-import '../../../injector.dart';
+import '../../../di/service_locator.dart';
 import '../../blocs/user/user_cubit.dart';
 
 class DemoPage extends StatefulWidget {

@@ -1,3 +1,4 @@
+import 'package:base_quick/src/data/datasources/local/sqflite/local_data_source_initializer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '/src/core/utils/color_utils.dart';
@@ -12,7 +13,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'src/core/routes/routes.dart';
-import 'src/injector.dart';
+import 'src/di/service_locator.dart';
 import 'generated/assets/fonts.gen.dart';
 import 'generated/localization/l10n.dart';
 import 'src/presentation/blocs/app/app_cubit.dart';
@@ -103,6 +104,10 @@ class MyApp extends StatelessWidget {
     WidgetsFlutterBinding.ensureInitialized();
 
     configLoading();
+
+    // Sqflite Configs
+    // var localDBInitializer = LocalDataSourceInitializer();
+    // await localDBInitializer.openDatabaseConnection();
 
     await setUpServiceLocator();
 

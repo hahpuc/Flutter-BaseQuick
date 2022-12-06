@@ -1,6 +1,6 @@
 import 'dart:developer';
 import '/src/data/datasources/remote/interceptors/refresh_token_interceptor.dart';
-import '/src/injector.dart';
+import '../../../di/service_locator.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
